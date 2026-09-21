@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Oahiduzzaman Shadin | Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f5f7fa; color: #2c3e50; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        
+        /* ১. নেভিগেশন বার */
+        header { background: #0f172a; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .logo { font-size: 20px; font-weight: bold; color: #38bdf8; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; margin-left: 20px; font-size: 15px; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: #38bdf8; }
+
+        /* ২. হিরো সেকশন */
+        .hero { display: flex; align-items: center; justify-content: space-between; background: white; padding: 50px; border-radius: 20px; margin-top: 30px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); gap: 30px; }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 36px; color: #1e293b; margin-bottom: 10px; }
+        .hero-text h2 { font-size: 18px; color: #0284c7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+        .hero-text p { color: #64748b; font-size: 16px; margin-bottom: 30px; }
+        .hero-img { flex: 1; text-align: center; }
+        .hero-img img { width: 100%; max-width: 320px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 4px solid #38bdf8; background: #e0f2fe; }
+
+        /* ৩. বাটন ও অ্যাকশন প্লাগইন */
+        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; font-size: 15px; font-weight: bold; text-decoration: none; border-radius: 8px; transition: 0.3s; cursor: pointer; text-align: center; border: none; }
+        .btn-primary { background-color: #0284c7; color: white; }
+        .btn-primary:hover { background-color: #0369a1; }
+        .btn-whatsapp { background-color: #22c55e; color: white; }
+        .btn-whatsapp:hover { background-color: #16a34a; }
+
+        /* ৪. মাই সার্ভিস সেকশন */
+        .section-title { text-align: center; font-size: 28px; color: #1e293b; margin: 50px 0 30px 0; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .service-card { background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border-top: 4px solid #0284c7; transition: 0.3s; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .service-card h3 { font-size: 20px; color: #1e293b; margin-bottom: 12px; }
+        .service-card p { color: #64748b; font-size: 15px; }
+
+        /* ৫. যোগাযোগ ও ফুটার প্লাগইন */
+        footer { background: #0f172a; color: #94a3b8; padding: 40px 0; margin-top: 60px; font-size: 15px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .footer-section h4 { color: white; font-size: 18px; margin-bottom: 15px; }
+        .footer-section p { margin-bottom: 8px; }
+        .footer-section a { color: #38bdf8; text-decoration: none; }
+        .footer-bottom { text-align: center; padding-top: 30px; margin-top: 30px; border-top: 1px solid #334155; font-size: 14px; }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column-reverse; padding: 30px; text-align: center; }
+            .nav-container { flex-direction: column; gap: 15px; }
+            .nav-links a { margin: 0 10px; }
+            .btn-group { flex-direction: column; width: 100%; }
+            .btn { display: block; width: 100%; margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ১. নেভিগেশন বার -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Md. Oahiduzzaman Shadin</div>
+            <nav class="nav-links">
+                <a href="#home">হোম</a>
+                <a href="#services">সার্ভিসসমূহ</a>
+                <a href="#contact">যোগাযোগ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" id="home">
+        <!-- ২. হিরো সেকশন -->
+        <div class="hero">
+            <div class="hero-text">
+                <h2>প্রম্পট ইঞ্জিনিয়ার | কনটেন্ট ক্রিয়েটর | সোশ্যাল মিডিয়া স্পেশালিস্ট</h2>
+                <h1>মোঃ ওয়াহিদুজ্জামান (স্বাধীন)</h1>
+                <p>ক্যানভা গ্রাফিক্স ডিজাইন, ক্যাপকাট প্রো-লেভেল ভিডিও এডিটিং (মোবাইল ও ডেক্সটপ) এবং ফেসবুক, ইউটিউব, ইনস্টাগ্রাম পেজ অপটিমাইজেশনের মাধ্যমে বিজনেসের প্রবৃদ্ধি নিশ্চিত করাই আমার মূল লক্ষ্য। এছাড়াও বিশ্বস্ততার সাথে প্রাতিষ্ঠানিক কার্গো ও লজিস্টিকস সলিউশন প্রদানে কাজ করছি।</p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">✉️ ইমেইল ঠিকানা দেখুন</a>
+                    <a href="https://wa.me" target="_blank" class="btn btn-whatsapp">💬  হোয়াটসঅ্যাপ মেসেজ</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <!-- আপনার পোস্ট-ইমেজ ডাইরেক্ট লিংক সফলভাবে যুক্ত করা হয়েছে -->
+                <img src="https://i.postimg.cc/3xrtFfvf/Gemini-Generated-Image-wr3uslwr3uslwr3u.jpg" alt="Md. Oahiduzzaman Shadin">
+            </div>
+        </div>
+
+        <!-- ৩. মাই সার্ভিস প্লাগইন -->
+        <h2 class="section-title" id="services">আমার বিশেষ সেবাসমূহ</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🎬 ক্যাপকাট ভিডিও এডিটিং</h3>
+                <p>মোবাইল ও ডেক্সটপ ডিভাইসের মাধ্যমে ইউটিউব ভিডিও, রিলস ও শর্টসের জন্য প্রফেশনাল কালার গ্রেডিং, অডিও ইনহ্যান্সমেন্ট ও ট্রেন্ডি ট্রানজিশন এডিটিং।</p>
+            </div>
+            <div class="service-card">
+                <h3>🎨 ক্যানভা ইউআই/গ্রাফিক্স ডিজাইন</h3>
+                <p>বিজনেস পোস্টার, ফেসবুক/ইনস্টাগ্রাম ব্যানার, হাই-কনভার্টিং ইউটিউব থাম্বনেইল এবং ব্র্যান্ডের লোগো ডিজাইন সলিউশন।</p>
+            </div>
+            <div class="service-card">
+                <h3>📱 সোশ্যাল মিডিয়া ম্যানেজমেন্ট</h3>
+                <p>ইউটিউব চ্যানেল ক্রিয়েট, অ্যাডভান্সড এসইઓ (SEO), মেটা ডেসক্রিপশন অপটিমাইজেশন এবং পেজ গ্রোথ স্ট্র্যাটেজি হ্যান্ডেল করা।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ৪. যোগাযোগ ও ফুটার সেকশন -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>অফিসের ঠিকানা</h4>
+                <p>মুক্তবাংলা শপিং কমপ্লেক্স</p>
+                <p>৭ম তলা, রুম নং: ১০৯, মিরপুর-১, ঢাকা-১২১৬</p>
+            </div>
+            <div class="footer-section">
+                <h4>সরাসরি যোগাযোগ</h4>
+                <p><b>ফোন ও হোয়াটসঅ্যাপ:</b> 01852525390, 01778652300</p>
+                <p><b>হোয়াটসঅ্যাপ হেল্পলাইন:</b> ০১৮০৬৬৪৭৭৮৩</p>
+            </div>
+            <div class="footer-section">
+                <h4>ইমেইল সমূহ</h4>
+                <p>📩 <a href="mailto:projapotioversease@gmail.com">projapotioversease@gmail.com</a></p>
+                <p>📩 <a href="mailto:drjaman385@gmail.com">drjaman385@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Md. Oahiduzzaman Shadin. All Rights Reserved. | প্রজাপতি ওভারসীজ পার্টনার।
+        </div>
+    </footer>
+
+</body>
+</html>
